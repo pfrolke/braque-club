@@ -1,0 +1,48 @@
+body {
+  background-color: #ffff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#logo-yellow {
+  animation: 4s move;
+}
+
+#logo-black {
+  animation: 3.6s move;
+}
+
+.datetext {
+  font-family: "Courier Prime", monospace;
+  font-size: xx-large;
+  text-anchor: middle;
+  opacity: 0;
+  animation: 10s fade 4.5s forwards;
+}

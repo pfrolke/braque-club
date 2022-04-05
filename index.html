@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRAQUE - COMING SOON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <svg>
+      <defs>
+        <pattern
+          id="stripe"
+          width="300px"
+          height="10px"
+          patternTransform="rotate(45 0 0)"
+          patternUnits="userSpaceOnUse"
+        >
+          <line
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="10"
+            style="stroke: black; stroke-width: 300px"
+          />
+        </pattern>
+
+        <clipPath id="logo-black-mask">
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="150px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="450px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="750px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="1050px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="1350px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="1650px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+        </clipPath>
+
+        <clipPath id="logo-yellow-mask">
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="0px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="300px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="600px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="900px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="1200px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="1500px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+        </clipPath>
+      </defs>
+
+      <rect x="0" y="0" fill="url(#stripe)" width="100%" height="100%" />
+      <g clip-path="url(#logo-black-mask)">
+        <image
+          id="logo-black"
+          class="logo"
+          x="10%"
+          y="30%"
+          width="80%"
+          href="assets/logo-black.svg"
+        />
+      </g>
+
+      <g clip-path="url(#logo-yellow-mask)">
+        <image
+          id="logo-yellow"
+          class="logo"
+          x="10%"
+          y="30%"
+          width="80%"
+          href="assets/logo-yellow.svg"
+        />
+      </g>
+      <g clip-path="url(#logo-black-mask)">
+        <text class="datetext" fill="#000000" x="50%" y="75%">3 JUNI 2022</text>
+      </g>
+      <g clip-path="url(#logo-yellow-mask)">
+        <text class="datetext" fill="#ffff00" x="50%" y="75%">3 JUNI 2022</text>
+      </g>
+    </svg>
+  </body>
+</html>
