@@ -37,6 +37,15 @@
           <rect
             class="black-mask-rect"
             x="-100%"
+            y="-150px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
             y="150px"
             fill="#ff00ff"
             width="200%"
@@ -88,9 +97,27 @@
             height="150px"
             transform="rotate(-45 0 0)"
           />
+          <rect
+            class="black-mask-rect"
+            x="-100%"
+            y="1950px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
         </clipPath>
 
         <clipPath id="logo-yellow-mask">
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="-300px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
           <rect
             class="yellow-mask-rect"
             x="-100%"
@@ -145,16 +172,48 @@
             height="150px"
             transform="rotate(-45 0 0)"
           />
+          <rect
+            class="yellow-mask-rect"
+            x="-100%"
+            y="1800px"
+            fill="#ff00ff"
+            width="200%"
+            height="150px"
+            transform="rotate(-45 0 0)"
+          />
         </clipPath>
       </defs>
 
-      <rect x="0" y="0" fill="url(#stripe)" width="100%" height="100%" />
+      <rect
+        class="stripe-rect"
+        x="0"
+        y="0"
+        fill="url(#stripe)"
+        width="100%"
+        height="100%"
+      />
+      <rect
+        class="stripe-rect"
+        x="-99.9%"
+        y="0"
+        fill="url(#stripe)"
+        width="100%"
+        height="100%"
+      />
+      <rect
+        class="stripe-rect"
+        x="99.9%"
+        y="0"
+        fill="url(#stripe)"
+        width="100%"
+        height="100%"
+      />
       <g clip-path="url(#logo-black-mask)">
         <image
           id="logo-black"
           class="logo"
           x="10%"
-          y="30%"
+          y="20%"
           width="80%"
           href="assets/logo-black.svg"
         />
@@ -165,24 +224,24 @@
           id="logo-yellow"
           class="logo"
           x="10%"
-          y="30%"
+          y="20%"
           width="80%"
           href="assets/logo-yellow.svg"
         />
       </g>
 
       <g clip-path="url(#logo-black-mask)">
-        <text class="datetext" fill="#000000" x="50%" y="75%">3 JUN 2022</text>
+        <text class="datetext" fill="#000000" x="50%" y="85%">3 JUNI</text>
       </g>
       <g clip-path="url(#logo-yellow-mask)">
-        <text class="datetext" fill="#ffff00" x="50%" y="75%">3 JUN 2022</text>
+        <text class="datetext" fill="#ffff00" x="50%" y="85%">PIP</text>
       </g>
 
       <g clip-path="url(#logo-black-mask)">
-        <text class="datetext" fill="#000000" x="50%" y="80%">MORE INFO SOON</text>
+        <text class="datetext" fill="#000000" x="50%" y="95%">2022</text>
       </g>
       <g clip-path="url(#logo-yellow-mask)">
-        <text class="datetext" fill="#ffff00" x="50%" y="80%">MORE INFO SOON</text>
+        <text class="datetext" fill="#ffff00" x="50%" y="95%">DEN HAAG</text>
       </g>
     </svg>
   </body>

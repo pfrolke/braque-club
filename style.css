@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #ffff00;
   display: flex;
@@ -5,6 +11,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 svg {
@@ -12,13 +19,34 @@ svg {
   height: 100%;
   width: 100%;
 }
-
+/* 420px -> 0px */
 @keyframes move {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(250px, 0);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(50px, 0);
+  }
+}
+
+@keyframes move-2 {
+  0% {
+    transform: translate(220px, 0);
+  }
+  50% {
+    transform: translate(10px, 0);
+  }
+  100% {
+    transform: translate(-205px, 0);
+  }
+}
+
+@keyframes move-3 {
+  0% {
+    transform: translate(420px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
   }
 }
 
@@ -31,18 +59,18 @@ svg {
   }
 }
 
-#logo-yellow {
-  animation: 4s move;
-}
-
-#logo-black {
-  animation: 3.6s move;
-}
-
 .datetext {
   font-family: "Courier Prime", monospace;
   font-size: xx-large;
   text-anchor: middle;
-  opacity: 0;
-  animation: 10s fade 4.5s forwards;
+  /* animation: 10s fade 4.5s forwards; */
+}
+
+#logo-yellow-mask,
+#logo-black-mask,
+.stripe-rect {
+  /* animation: 3s move infinite alternate ease-in-out; */
+  animation: 3s move-2 infinite ease-in-out;
+  /* animation: 3s move-3 infinite linear; */
+  /* transform: translate(50px, 0); */
 }
