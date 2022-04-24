@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -28,6 +29,15 @@ svg {
   }
 }
 
+@keyframes move-2 {
+  0% {
+    transform: translate(0px, 0);
+  }
+  100% {
+    transform: translate(-420px, 0);
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -42,7 +52,7 @@ svg {
 }
 
 #logo-black {
-  animation: 3.6s move;
+  animation: 3.8s move;
 }
 
 .datetext {
@@ -51,4 +61,10 @@ svg {
   text-anchor: middle;
   opacity: 0;
   animation: 10s fade 4.5s forwards;
+}
+
+#logo-yellow-mask,
+#logo-black-mask,
+.stripe-rect {
+  animation: move-2 10s infinite linear;
 }
