@@ -20,15 +20,6 @@ svg {
   width: 100%;
 }
 
-@keyframes move {
-  0% {
-    transform: translate(100%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
 @keyframes move-2 {
   0% {
     transform: translate(0px, 0);
@@ -47,24 +38,51 @@ svg {
   }
 }
 
-#logo-yellow {
-  animation: 4s move;
-}
-
-#logo-black {
-  animation: 3.8s move;
-}
-
 .datetext {
   font-family: "Courier Prime", monospace;
   font-size: xx-large;
   text-anchor: middle;
-  opacity: 0;
-  animation: 10s fade 4.5s forwards;
 }
 
 #logo-yellow-mask,
 #logo-black-mask,
 .stripe-rect {
   animation: move-2 10s infinite linear;
+}
+
+.btn {
+  font-family: "Courier Prime", monospace;
+  position: absolute;
+  background-color: white;
+  color: black;
+  z-index: 99;
+  font-size: xx-large;
+  text-anchor: middle;
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 2px 2px yellow;
+  border: 5px white solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px #0000000f;
+}
+
+.btn:hover {
+  color: #ffff00;
+  background-color: black;
+  margin-top: 5px;
+  border-color: black;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.btn-tickets {
+  top: 82%;
+}
+
+.btn-social {
+  top: 90%;
+}
+
+.la-ticket-alt {
+  transform: rotate(-45deg);
 }
