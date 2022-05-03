@@ -44,6 +44,10 @@ svg {
   text-anchor: middle;
 }
 
+#logo-black, #logo-yellow {
+  max-width: 777px;
+}
+
 #logo-yellow-mask,
 #logo-black-mask,
 .stripe-rect {
